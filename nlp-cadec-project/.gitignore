@@ -1,0 +1,48 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Environment / secrets ---
+.env
+.env.local
+
+# --- Data (CADEC is licensed research-use, not for redistribution) ---
+data/raw/*
+!data/raw/README.md
+data/processed/*
+!data/processed/.gitkeep
+
+# --- Model artifacts (large binaries don't belong in git) ---
+models/*
+!models/.gitkeep
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.pkl
+*.joblib
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Logs ---
+*.log
+wandb/
+runs/
